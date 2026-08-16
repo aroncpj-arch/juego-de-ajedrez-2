@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="100%" height="100%" fill="#151515" />
+  <!-- Simple emblem: stylized king + queen crowns -->
+  <g transform="translate(160,160) scale(0.7)">
+    <g fill="#E6DCC7">
+      <path d="M128 64 L192 32 L224 64 L288 32 L320 64 L288 128 L64 128 Z" />
+    </g>
+    <text x="64" y="420" font-family="Arial, Helvetica, sans-serif" font-size="72" fill="#D4AF37">CheckMate</text>
+    <text x="64" y="500" font-family="Arial, Helvetica, sans-serif" font-size="48" fill="#E6DCC7">Bet</text>
+  </g>
+</svg>

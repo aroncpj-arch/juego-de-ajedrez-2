@@ -1,0 +1,36 @@
+# Docker Compose (servicios mínimos para desarrollo)
+
+version: '3.8'
+services:
+  postgres:
+    image: postgres:13
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cm_user
+      POSTGRES_PASSWORD: cm_pass
+      POSTGRES_DB: checkmate
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:6
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  minio:
+    image: minio/minio:latest
+    command: server /data
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"
+    volumes:
+      - miniodata:/data
+
+volumes:
+  pgdata:
+  miniodata:

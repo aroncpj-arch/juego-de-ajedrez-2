@@ -1,0 +1,8 @@
+# Archivos y carpetas incluidos en el scaffold (descripción)
+
+- backend/: Backend basado en NestJS (estructura inicial, later commits añaden rutas completas)
+- mobile/: Proyecto Flutter (UI inicial y estructura, APK debug en /artifacts)
+- admin/: Panel admin Next.js (interfaz básica para depósitos/turnos y configuración)
+- branding/: Logos y assets (SVG + PNG)
+- artifacts/: Lugar donde se publicará el APK debug
+- docker-compose.yml: Servicios locales (Postgres, Redis, MinIO)
